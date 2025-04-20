@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, turquoise, #ff80b3);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100% 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#playAgain {
+  background-color: #007bff;
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Make it a block element */
+  width: fit-content; /* Set width to fit content */
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Word Guessing Game</h1>
+        <p id="info">Guess the secret word!</p>
+        <p id="hint"></p>
+        <input type="text" id="guessInput" placeholder="Enter your guess">
+        <button id="submitGuess">Submit Guess</button>
+        <button id="playAgain" style="display:none;">Play Again</button>
+        <p id="message"></p>
+        <p id="attempts"></p>
+    </div>
+    <script src="V.js"></script>
+</body>
+</html>
